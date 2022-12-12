@@ -1,0 +1,12 @@
+#!/bin/bash
+
+cd ../../
+
+echo Running Physics Test
+python3 -m sky_racers.test.test_physics
+echo Running Collision Test
+python3 -m sky_racers.test.test_collision
+echo Running Checkpoint Test
+python3 -m sky_racers.test.test_checkpoint
+echo Running Sounds Test
+python3 -m sky_racers.test.test_sounds

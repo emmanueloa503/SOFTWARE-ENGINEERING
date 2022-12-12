@@ -1,0 +1,29 @@
+This will be used to read car instructions that are given to create the fastest car. The commands will be made of if statments with conditions and values. The conditions allowed involve code words including:
+
+accelerate (movement)
+reverse_accelerate (movement)
+increase (location)
+decrease (location)
+distance (location)
+angle_to_checkpoint (angle)
+angle_to_wall (angle)
+distance_to_checkpoint (distance)
+distance_to_wall (distance)
+(Value of distance or angle)
+
+Use these values in plain english or write them one after another.
+The format should be similar to this:
+
+-(movement based command)
+-if (location based command) to (object) is (distance based command) than (number)
+-(movement based command) (distance or angle based command)
+
+The angle and distance to checkpoint helps you get to the nearest checkpoint. Angle and distance to car helps you avoid collsions. 
+
+Here is an example:
+
+accelerate forward.
+if distance to wall is less than 50 pixels away.
+increase distance_to_wall. 
+if angle to checkpoint is greater than 5 degrees
+decrease angle_to_checkpoint

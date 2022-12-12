@@ -1,0 +1,27 @@
+#!/bin/bash
+
+platform='Unknown'
+
+case "$OSTYPE" in
+	linux*)	platform='Linux' ;;
+	msys*)	platform='Windows' ;;
+	*)		platform='Unknown' ;;
+esac
+
+echo "$platform system detected"
+
+if [[ $platform == 'Linux' ]]; then
+	parent_dir="$(dirname "$(pwd)")"
+	insert="cd ${parent_dir}"
+	sed -i '/cd/d' assets/executables/sky_racers
+	sed -i '3 a'"${insert}"'' assets/executables/sky_racers
+	sudo cp assets/executables/sky_racers /usr/local/bin/
+	sudo cp assets/executables/edit_level_sky_racers /usr/local/bin/
+	echo "Sky Racers Installed"
+elif [[ $platform == 'Windows' ]]; then
+	 cp assets/executables/sky_racers "C:\Program Files"
+	 cp assets/executables/edit_level_sky_racers "C:\Program Files"
+	echo "Sky Racers Installed"
+elif [[ $platform == 'Unknown' ]]; then
+    echo "Unsupported system, Sky Racers not installed"
+fi

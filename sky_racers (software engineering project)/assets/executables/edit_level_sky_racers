@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cd 
+python3 -m sky_racers.assets.boundry_editor.level_editor

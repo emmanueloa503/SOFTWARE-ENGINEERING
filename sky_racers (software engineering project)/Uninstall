@@ -1,0 +1,23 @@
+#!/bin/bash
+
+platform='Unknown'
+
+case "$OSTYPE" in
+    linux*) platform='Linux' ;;
+    msys*) platform='Windows' ;;
+    *)      platform='Unknown' ;;
+esac
+
+echo "$platform system detected"
+
+if [[ $platform == 'Linux' ]]; then
+	sudo rm /usr/local/bin/sky_racers
+	sudo rm /usr/local/bin/edit_level_sky_racers
+    echo "Sky Racers uninstalled"
+elif [[ $platform == 'Windows' ]]; then
+    rm "C:\Program Files\sky_racers"
+    rm "C:\Program Files\edit_level_sky_racers"
+    echo "Sky Racers uninstalled"
+elif [[ $platform == 'Unknown' ]]; then
+	echo "Unsupported system, Sky Racers not installed"
+fi

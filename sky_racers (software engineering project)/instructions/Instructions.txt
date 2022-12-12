@@ -1,0 +1,3 @@
+accelerate forward
+if distance to checkpoint is greater than 30 pixels away
+decrease distance to checkpoint
