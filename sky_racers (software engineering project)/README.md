@@ -1,16 +1,22 @@
-<h1>JWipe - Disk Sanitization</h1>
+<h1> Sky racer n</h1>
 
  ### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)
 
 <h2>Description</h2>
-Project consists of a simple PowerShell script that walks the user through "zeroing out" (wiping) any drives that are connected to the system. The utility allows you to select the target disk and choose the number of passes that are performed. The PowerShell script will configure a diskpart script file based on the user's selections and then launch Diskpart to perform the disk sanitization.
+Project consists of Proof of concept for all main elements needed to develop a racing 
+game. This includes object movement, barriers, sound, and physics.
+Develop a demo of these concepts
 <br />
 
 
 <h2>Languages and Utilities Used</h2>
 
-- <b>PowerShell</b> 
-- <b>Diskpart</b>
+- <b>Pygamen</b> 
+- <b>Java</b>
+- <b>VM demo</b>
+- <b>Box2D collision/interaction demo</b>
+
+
 
 <h2>Environments Used </h2>
 
