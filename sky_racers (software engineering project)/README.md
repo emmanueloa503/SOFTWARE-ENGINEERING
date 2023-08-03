@@ -1,4 +1,4 @@
-<h1> Sky racer n</h1>
+<h1> Sky racing game</h1>
 
  ### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)
 
