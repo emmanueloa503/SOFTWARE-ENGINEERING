@@ -1,50 +1,58 @@
-# README #
+<h1>JWipe - Disk Sanitization</h1>
 
-Switch to the Cycle1 branch using git checkout Cycle1 for the cycle 1 deliverable
+ ### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)
 
-Switch to the Cycle2 branch using git checkout Cycle2 for the cycle 2 deliverable
-
-Switch to the Cycle3 branch using git checkout Cycle3 for the cycle 3 deliverable
-
-### What is this repository for? ###
-
-* This is a racing game for our CS370 project
-* Version 1.0
-
-### How do I get set up? ###
-
-BUILD INSTRUCTIONS:
-
-Install python3
-    sudo apt-get install python3
-
-Install pip
-    sudo apt-get install python3-pip
-
-Install pygame, box2d, and pickle using pip
-    pip install box2d-py
-    pip install pygame
-    pip install pickle_mixin
-
-INSTALL INSTRUCTIONS:
-
-Note: Sky Racers is installable on Linux and Windows
-Windows install requires the sky racers repo to be contained in the user’s home directory
-
-    run ./Install in the sky_racers directory to install sky_racers
-    run ./Uninstall in the sky_racers directory to uninstall sky_racers
-
-Create a 1024x768 map and name it map.png
-Copy this map.png file to assets/boundary_editor and assets/game
-Run edit_level_sky_racers to edit your map
-Once you finish editing, save the file. You will now have a file named map.data in your main 
-directory.
-Copy this file to assets/game
-
-Run sky_racers anywhere to play the game
+<h2>Description</h2>
+Project consists of a simple PowerShell script that walks the user through "zeroing out" (wiping) any drives that are connected to the system. The utility allows you to select the target disk and choose the number of passes that are performed. The PowerShell script will configure a diskpart script file based on the user's selections and then launch Diskpart to perform the disk sanitization.
+<br />
 
 
-TESTING:
+<h2>Languages and Utilities Used</h2>
 
-    Run ./run_tests in the test directory to run all tests at once
-    To run tests separately refer to the run_tests script
+- <b>PowerShell</b> 
+- <b>Diskpart</b>
+
+<h2>Environments Used </h2>
+
+- <b>Windows 10</b> (21H2)
+
+<h2>Program walk-through:</h2>
+
+<p align="center">
+Launch the utility: <br/>
+<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Select the disk:  <br/>
+<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Enter the number of passes: <br/>
+<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Confirm your selection:  <br/>
+<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Wait for process to complete (may take some time):  <br/>
+<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Sanitization complete:  <br/>
+<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Observe the wiped disk:  <br/>
+<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+<!--
+ ```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
+--!>
